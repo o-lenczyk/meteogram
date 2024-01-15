@@ -1,3 +1,5 @@
+![<img src="pic.jpg" width="250"/>](pic.jpg)
+
 # purpose
 create daily wallpaper for e-ink device with current weather
 sync it daily
