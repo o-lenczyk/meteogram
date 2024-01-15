@@ -1,0 +1,14 @@
+[Unit]
+Description=meteogram
+DefaultDependencies=no
+Conflicts=shutdown.target
+Before=basic.target shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/mpiase/.virtualenvs/yr/bin/python /home/mpiase/repos/yr/main.py  
+StandardOutput=/home/mpiase/wall/meteogram.log
+SuccessExitStatus=DATAERR
+IOSchedulingClass=idle
+Restart=on-failure
+RestartSec=10

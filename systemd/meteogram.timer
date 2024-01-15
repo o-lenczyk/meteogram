@@ -1,0 +1,13 @@
+[Unit]
+Description=meteogram
+Documentation=someday
+After=network-online.target
+
+[Timer]
+OnStartupSec=5min
+OnCalendar=07:00:00
+OnUnitActiveSec=1d
+Persistent=true
+
+[Install]
+WantedBy=timers.target
